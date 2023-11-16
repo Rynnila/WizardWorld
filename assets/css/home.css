@@ -1,0 +1,118 @@
+body {
+    background-color: #04060F;
+    color: #bcbcff;
+}
+
+.nav {
+    background-color: #000024;
+}
+
+li a:hover:before {
+    background-color: #545491;
+}
+
+#bem_vindo {
+    position: absolute;
+    width: 60%;
+    align-self: center;
+    background-color: #0606068f;
+    border: solid 0.1em #ffffff52;
+    font-size: 1em;
+    text-align: center;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    border-image: linear-gradient(to right, #fa5c00, #ffd000, #00ff0d, #0145ff) 1;
+    border-image-slice: 1;
+}
+
+h1 {
+    color: #545491;
+    margin-top: 2%;
+    margin-bottom: 0;
+    letter-spacing: 2px
+}
+
+h2 {
+    margin-bottom: 2%;
+}
+
+#casas {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1% auto;
+    margin-top: 16%;
+}
+
+#cards {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    font-size: 14px;
+    border: solid 0.1em #ffffff52;
+    width: 22%;
+    padding: 15px;
+    transition: transform 0.3s;
+    margin-top: 20px;
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.card h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+
+.card h3 {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.card p {
+    margin: 0;
+    color: #ececf8;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+#grifinoria {
+    border-image: linear-gradient(to right top, #fd9696, #ff0000) 1;
+    border-image-slice: 1;
+}
+
+#lufalufa {
+    border-image: linear-gradient(to right top, #d4b500, #f4fa9f) 1;
+    border-image-slice: 1;
+}
+
+#sonserina {
+    border-image: linear-gradient(to right top, #83e988, #144904) 1;
+    border-image-slice: 1;
+}
+
+#corvinal {
+    border-image: linear-gradient(to right top, #2604e7, #5578e9) 1;
+    border-image-slice: 1;
+}
+
+.imgcard {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 50%;
+}

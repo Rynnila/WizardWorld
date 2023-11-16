@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compras</title>
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./assets/css/pages.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/compras.css">
+</head>
+
+<body>
+    <div class="containerAll">
+        <nav>
+            <div>
+                <ul class="nav">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/materias">Matérias</a></li>
+                    <li><a href="/professores">Professores</a></li>
+                    <li><a href="/fantasmas">Fantasmas</a></li>
+                    <li><a href="/compras" style="border-bottom: 2px solid #545491;">Compras</a></li>
+                    <li><a href="/index">Sair</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="bem_vindo">
+            <h1>BEM VINDO (A)</h1>
+            <h2>A Livraria Floreios e Borrões é tão lotada de livros de Magia, que parece precisar mesmo de magia para
+                não deixar as estantes despencarem.</h2>
+        </div>
+
+        <div id="livros">
+            <h1 style="margin: 0%; text-align:center;">Para ter magia na ponta dos dedos</h1>
+            <div class="cards">
+                <div class="card" id="border">
+                    <h3>Harry Potter e a</h3>
+                    <h2 id="title1">Pedra Filosofal</h2>
+                    <img class="img-livro" src="./assets/img/livros/livro1.jpg" alt="livro"
+                        style="filter: drop-shadow(1px 1px 10px #00d9ff);">
+                    <p>No primeiro livro da série, Harry Potter descobre que é um bruxo e é convidado a frequentar a
+                        Escola de Magia e Bruxaria de Hogwarts. Lá, ele faz amigos, enfrenta desafios e desvenda
+                        segredos enquanto busca a lendária Pedra Filosofal.</p>
+                    <div class="preco_container">
+                        <h2 style="color:#00d9ff">R$</h2>
+                        <h2 class="preco" id="preco1">46.99</h2>
+                    </div>
+                    <div class="quantidade_container">
+                        <button class="operador_quantidade"
+                            onclick="alterarQuantidade(-1, 'qtd_livro1', 'preco1', 46.99)">-</button>
+                        <input class="quantidade" type="number" placeholder="0" id="qtd_livro1">
+                        <button class="operador_quantidade"
+                            onclick="alterarQuantidade(1, 'qtd_livro1', 'preco1', 46.99)">+</button>
+                    </div>
+                    <button class="comprar_btn" onclick="buy('title1','qtd_livro1','preco1')">Comprar!</button>
+                </div>
+                <div class="card" id="border">
+                    <h3>Harry Potter e a</h3>
+                    <h2 id="title2">Câmarara Secreta</h2>
+                    <img class="img-livro" src="./assets/img/livros/livro2.jpg" alt="livro"
+                        style="filter: drop-shadow(1px 1px 10px #00b7ff);">
+                    <p>O segundo ano de Harry em Hogwarts é marcado por uma série de eventos misteriosos, incluindo o
+                        surgimento da Câmara Secreta e o monstro que ela abriga. Harry e seus amigos embarcam em uma
+                        jornada para desvendar o mistério antes que o mal seja liberado.</p>
+                    <div class="preco_container">
+                        <h2 style="color:#00b7ff">R$</h2>
+                        <h2 class="preco" id="preco2">46.99</h2>
+                    </div>
+                    <div class="quantidade_container">
+                        <button class="operador_quantidade"
+                            onclick="alterarQuantidade(-1, 'qtd_livro2', 'preco2', 46.99)">-</button>
+                        <input class="quantidade" type="number" placeholder="0" id="qtd_livro2">
+                        <button class="operador_quantidade"
+                            onclick="alterarQuantidade(1, 'qtd_livro2', 'preco2', 46.99)">+</button>
+                    </div>
+                    <button class="comprar_btn" onclick="buy('title2','qtd_livro2','preco2')">Comprar!</button>
+                </div>
+                <div class="card" id="border">
+                    <h3>Harry Potter e o</h3>
+                    <h2 id="title3">Prisioneiro de Azkaban</h2>
+                    <img class="img-livro" src="./assets/img/livros/livro3.jpg" alt="livro"
+                        style="filter: drop-shadow(1px 1px 10px #8c00ff);">
+                    <p>Neste livro, Harry descobre a verdade sobre o Prisioneiro de Azkaban, Sirius Black, e enfrenta
+                        desafios perigosos enquanto tenta proteger a escola e seu próprio passado.</p>
+                    <div class="preco_container">
+                        <h2 style="color:#8c00ff">R$</h2>
+                        <h2 class="preco" id="preco3">46.99</h2>
+                    </div>
+                    <div class="quantidade_container">
+                        <button class="operador_quantidade"
+                            onclick="alterarQuantidade(-1, 'qtd_livro3', 'preco3', 46.99)">-</button>
+                        <input class="quantidade" type="number" placeholder="0" id="qtd_livro3">
+                        <button class="operador_quantidade"
+                            onclick="alterarQuantidade(1, 'qtd_livro3', 'preco3', 46.99)">+</button>
+                    </div>
+                    <button class="comprar_btn" onclick="buy('title3','qtd_livro3','preco3')">Comprar!</button>
+                </div>
+                <div class="card" id="border">
+                    <h3>Harry Potter e o</h3>
+                    <h2 id="title4">Cálice de Fogo</h2>
+                    <img class="img-livro" src="./assets/img/livros/livro4.jpg" alt="livro"
+                        style="filter: drop-shadow(1px 1px 10px #00ffaa);">
+                    <p>O quarto ano de Harry em Hogwarts é marcado pela realização do Torneio Tribruxo, um desafio
+                        perigoso que revela segredos e ameaças maiores do que ele jamais imaginou</p>
+                    <div class="preco_container">
+                        <h2 style="color:#00ffaa">R$</h2>
+                        <h2 class="preco" id="preco4">46.99</h2>
+                    </div>
+                    <div class="quantidade_container">
+                        <button class="operador_quantidade"
+                            onclick="alterarQuantidade(-1, 'qtd_livro4', 'preco4', 46.99)">-</button>
+                        <input class="quantidade" type="number" placeholder="0" id="qtd_livro4">
+                        <button class="operador_quantidade"
+                            onclick="alterarQuantidade(1, 'qtd_livro4', 'preco4', 46.99)">+</button>
+                    </div>
+                    <button class="comprar_btn" onclick="buy('title4','qtd_livro4','preco4')">Comprar!</button>
+                </div>
+                <div class="card" id="border">
+                    <h3>Harry Potter e a</h3>
+                    <h2 id="title5">Ordem da Fênix</h2>
+                    <img class="img-livro" src="./assets/img/livros/livro5.jpg" alt="livro"
+                        style="filter: drop-shadow(1px 1px 10px #ae00ff);">
+                    <p>Harry enfrenta uma série de desafios enquanto luta contra a crescente ameaça do bruxo das trevas
+                        Lord Voldemort. Ele se une a um grupo secreto, a Ordem da Fênix, para enfrentar os perigos que
+                        se aproximam.</p>
+                    <div class="preco_container">
+                        <h2 style="color:#ae00ff">R$</h2>
+                        <h2 class="preco" id="preco5">50.99</h2>
+                    </div>
+                    <div class="quantidade_container">
+                        <button class="operador_quantidade"
+                            onclick="alterarQuantidade(-1, 'qtd_livro5', 'preco5', 50.99)">-</button>
+                        <input class="quantidade" type="number" placeholder="0" id="qtd_livro5">
+                        <button class="operador_quantidade"
+                            onclick="alterarQuantidade(1, 'qtd_livro5', 'preco5', 50.99)">+</button>
+                    </div>
+                    <button class="comprar_btn" onclick="buy('title5','qtd_livro5','preco5')">Comprar!</button>
+                </div>
+                <div class="card" id="border">
+                    <h3>Harry Potter e o</h3>
+                    <h2 id="title6">Enigma do Príncipe</h2>
+                    <img class="img-livro" src="./assets/img/livros/livro6.jpg" alt="livro"
+                        style="  filter: drop-shadow(1px 1px 10px #15ff00);">
+                    <p>Neste livro, Harry se aprofunda no passado de Voldemort e na busca das Horcruxes, objetos que
+                        contêm fragmentos da alma do bruxo das trevas. O romance e a tragédia se entrelaçam à medida que
+                        a guerra se intensifica.</p>
+                    <div class="preco_container">
+                        <h2 style="color:#15ff00">R$</h2>
+                        <h2 class="preco" id="preco6">46.99</h2>
+                    </div>
+                    <div class="quantidade_container">
+                        <button class="operador_quantidade"
+                            onclick="alterarQuantidade(-1, 'qtd_livro6', 'preco6', 46.99)">-</button>
+                        <input class="quantidade" type="number" placeholder="0" id="qtd_livro6">
+                        <button class="operador_quantidade"
+                            onclick="alterarQuantidade(1, 'qtd_livro6', 'preco6', 46.99)">+</button>
+                    </div>
+                    <button class="comprar_btn" onclick="buy('title6','qtd_livro6','preco6')">Comprar!</button>
+                </div>
+                <div class="card" id="border">
+                    <h3>Harry Potter e as</h3>
+                    <h2 id="title7">Relíquias da Morte</h2>
+                    <img class="img-livro" src="./assets/img/livros/livro7.jpg" alt="livro"
+                        style="filter: drop-shadow(1px 1px 10px #ffd000);">
+                    <p>No último livro da série original, Harry, Ron e Hermione se aventuram pelo mundo bruxo em busca
+                        das Horcruxes de Voldemort. A batalha final se aproxima, e a luta entre o bem e o mal atinge seu
+                        clímax, com revelações surpreendentes e sacrifícios heróicos.</p>
+                    <div class="preco_container">
+                        <h2 style="color:#ffd000">R$</h2>
+                        <h2 class="preco" id="preco7">46.99</h2>
+                    </div>
+                    <div class="quantidade_container">
+                        <button class="operador_quantidade"
+                            onclick="alterarQuantidade(-1, 'qtd_livro7', 'preco7', 46.99)">-</button>
+                        <input class="quantidade" type="number" placeholder="0" id="qtd_livro7">
+                        <button class="operador_quantidade"
+                            onclick="alterarQuantidade(1, 'qtd_livro7', 'preco7', 46.99)">+</button>
+                    </div>
+                    <button class="comprar_btn" onclick="buy('title7','qtd_livro7','preco7')">Comprar!</button>
+                </div>
+                <div class="card" id="border">
+                    <h3>Harry Potter e a</h3>
+                    <h2 id="title8">Criança Amaldiçoada</h2>
+                    <img class="img-livro" src="./assets/img/livros/livro8.jpg" alt="livro"
+                        style="filter: drop-shadow(1px 1px 10px #ffe882);">
+                    <p>Esta peça de teatro em formato de livro é uma sequência da série original de Harry Potter. Agora
+                        adulto e pai de três filhos, Harry enfrenta desafios inesperados, incluindo um passado sombrio
+                        que volta para assombrá-lo. A história segue as aventuras de Alvo Severo Potter e Scorpius
+                        Malfoy enquanto lidam com o legado de seus pais.</p>
+                    <div class="preco_container">
+                        <h2 style="color:#ffe882">R$</h2>
+                        <h2 class="preco" id="preco8">46.99</h2>
+                    </div>
+                    <div class="quantidade_container">
+                        <button class="operador_quantidade"
+                            onclick="alterarQuantidade(-1, 'qtd_livro8', 'preco8', 46.99)">-</button>
+                        <input class="quantidade" type="number" placeholder="0" id="qtd_livro8">
+                        <button class="operador_quantidade"
+                            onclick="alterarQuantidade(1, 'qtd_livro8', 'preco8', 46.99)">+</button>
+                    </div>
+                    <button class="comprar_btn" onclick="buy('title8','qtd_livro8','preco8')">Comprar!</button>
+                </div>
+                <div class="card" id="border">
+                    <h3>Box</h3>
+                    <h2 id="title9">Biblioteca de Hogwarts</h2>
+                    <img class="img-livro" src="./assets/img/livros/livro9.jpg" alt="livro"
+                        style="filter: drop-shadow(1px 1px 10px #10ff2f);">
+                    <p>Este conjunto especial de livros reúne uma série de títulos e histórias do mundo mágico de Harry
+                        Potter. Inclui "Quadribol Através dos Séculos", "Animais Fantásticos e Onde Habitam" e "Os
+                        Contos de Beedle, o Bardo", fornecendo informações detalhadas sobre os aspectos da cultura
+                        bruxa, esportes e contos populares dentro do universo da série. É um tesouro de conhecimento
+                        para os fãs de Harry Potter.</p>
+                    <div class="preco_container">
+                        <h2 style="color:#10ff2f">R$</h2>
+                        <h2 class="preco" id="preco9">99.99</h2>
+                    </div>
+                    <div class="quantidade_container">
+                        <button class="operador_quantidade"
+                            onclick="alterarQuantidade(-1, 'qtd_box', 'preco9', 99.99)">-</button>
+                        <input class="quantidade" type="number" placeholder="0" id="qtd_box">
+                        <button class="operador_quantidade"
+                            onclick="alterarQuantidade(1, 'qtd_box', 'preco9', 99.99)">+</button>
+                    </div>
+                    <button class="comprar_btn" onclick="buy('title9','qtd_livro9','preco9')">Comprar!</button>
+                </div>
+            </div>
+        </div>
+
+
+        <h2 style="margin-bottom: 1%;">Lista de Livros no Carrinho</h2>
+        <table id="bruxinho-table">
+            <tbody>
+                <!-- <tr>
+                    <th>Nome do Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                </tr>
+                <tr>
+                    <td>Dado 1,1</td>
+                    <td>Dado 1,2</td>
+                    <td>Dado 1,3</td>
+                </tr>
+                <tr>
+                    <td>Dado 2,1</td>
+                    <td>Dado 2,2</td>
+                    <td>Dado 2,3</td>
+                </tr>
+                <tr>
+                    <td>Dado 3,1</td>
+                    <td>Dado 3,2</td>
+                    <td>Dado 3,3</td>
+                </tr> -->
+            </tbody>
+        </table>
+        <script src="front.js"></script>
+        <script src="carrinho.js"></script>
+</body>
+
+</html>

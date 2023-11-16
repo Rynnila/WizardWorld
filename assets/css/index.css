@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: #060606;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.containerAll {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 2%;
+    width: 55%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#bigBox {
+    position: relative;
+    width: 100%;
+    height: 55%;
+    background-color: #0606068f;
+    border: solid 0.1em #fff;
+    border-radius: 7px;
+    font-size: 1.5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: #FFF;
+    margin-bottom: 5%;
+    font-size: 1.5em;
+    margin-top: 5%;
+    letter-spacing: 2px
+}
+
+h2 {
+    color: #FFF;
+    font-size: 0.7em;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    letter-spacing: 3px;
+    margin-bottom: 1%;
+}
+
+h3 {
+    color: #fff;
+    margin-bottom: 2%;
+    font-size: 0.5em;
+    letter-spacing: normal;
+}
+
+#logar {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ordem {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0606068f;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+    width: auto;
+    height: 3em;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 0 0 10px #095f81, 0 0 25px #095f81;
+    border: solid 2px #095f81;
+    border-radius: 5px;
+}
+
+.boxButton:hover {
+    background-color: #000000fd;
+    transition: 1s;
+    cursor: pointer;
+    border: solid 2px #f802d7;
+    box-shadow: 0 0 10px #f802d7, 0 0 2.5px #f802d7;
+}
+
+input {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0606068f;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    margin: 2%;
+    font-size: 1em;
+    width: 50%;
+    height: 3em;
+    box-shadow: 0 0 10px #095f81, 0 0 25px #095f81;
+    border: solid 2px #095f81;
+    border-radius: 5px;
+}
+
+input:focus {
+    background-color: #000000fd;
+    transition: 1s;
+    border: solid 2px #c000a6;
+    box-shadow: 0 0 10px #f802d7, 0 0 2.5px #f802d7;
+    outline: 0;
+}
+
+a {
+    text-decoration: underline;
+    color: #05adf0;
+    display: inline-block;
+    padding: 15px 20px;
+    text-align: center;
+    color: #05adf0;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+    width: auto;
+    height: auto;
+}
+
+a:hover {
+    transition: 1s;
+    cursor: pointer;
+    color: #f802d7;
+}
+
+/*---------------------------------------------*/
+
+#criar_conta {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#text_logon {
+    background-color: #0606068f;
+    border: solid 0.1em #fff;
+    border-radius: 7px;
+    font-size: 1.5em;
+    align-content: center;
+    justify-content: center;
+}

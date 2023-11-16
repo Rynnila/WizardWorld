@@ -1,0 +1,93 @@
+body {
+    background-color: #0e0400;
+    color: #ff9292;
+}
+
+#alerta {
+    position: absolute;
+    width: 60%;
+    align-self: center;
+    border: solid 0.1em #ffffff52;
+    font-size: 1em;
+    text-align: center;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    border-image: linear-gradient(to right, #fa5c00, #ffd000, #00ff0d, #0145ff) 1;
+    border-image-slice: 1;
+}
+
+.nav {
+    background-color: #240000;
+}
+
+li a:hover:before {
+    background-color: #F07F82;
+}
+
+h1 {
+    color: #a53e3e;
+    margin-top: 2%;
+    margin-bottom: 0;
+    letter-spacing: 2px
+}
+
+h2 {
+    margin-bottom: 2%;
+}
+
+#casas {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1% auto;
+    margin-top: 16%;
+}
+
+#cards {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    font-size: 14px;
+    border: solid 0.1em #ffffff52;
+    width: 22%;
+    padding: 15px;
+    transition: transform 0.3s;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 5%;
+    border-image: linear-gradient(to right top, #ff0000, #0051ff) 1;
+    border-image-slice: 1;
+}
+
+.card h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+
+.card h3 {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.card p {
+    margin: 0;
+    color: #fcd8d8;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}

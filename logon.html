@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro</title>
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
+</head>
+
+<body>
+  <img src="./assets/img/fundohp.png" style="width: 100%;" />
+
+  <div class="containerAll">
+    <div id="text_logon">
+      <h1 style="margin-bottom: 1.5%;">Seja bem-vindo(a) ao mundo mágico de registros!</h1>
+      <h2 style="margin-bottom: 3%; font-style:italic;">Accio dados do Usuário!</h2>
+    </div>
+    <div id="criar_conta">
+      <div class="ordem">
+        <input id="nome" type="text" placeholder="Usuário" />
+        <input id="email" type="email" placeholder="Email" />
+      </div>
+      <div class="ordem">
+        <input id="senha" type="password" placeholder="Senha" />
+        <input id="confirmar_senha" type="password" placeholder="Confirmar Senha">
+      </div>
+      <div class="ordem">
+        <button class="boxButton" onclick="register()">Criar Conta</button>
+        <button class="boxButton" onclick="irPara('/index')">Voltar</button>
+      </div>
+    </div>
+  </div>
+<script src="front.js"></script>
+</body>
+
+</html>
